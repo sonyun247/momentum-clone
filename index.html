@@ -6,12 +6,26 @@
   </head>
   <body>
     <div class="js-clock">
-      <h1 class="js-title">12:34</h1>
+      <h1 class="js-clock__title">00:00</h1>
     </div>
-    <form class="js-form">
-      <input type="text" placeholder="What's your name?" />
+    <form class="js-greeting-form form">
+      <input
+        class="js-greeting-form__input"
+        type="text"
+        placeholder="Hello, what's your name?"
+      />
     </form>
+    <h4 class="js-greetings greetings"></h4>
+    <form class="js-toDo-form">
+      <input
+        class="js-toDo-form__input"
+        type="text"
+        placeholder="What is your main focus for today?"
+      />
+    </form>
+    <ul class="js-toDo-list"></ul>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
+    <script src="todo.js"></script>
   </body>
 </html>
