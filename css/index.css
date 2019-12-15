@@ -1,9 +1,10 @@
-body {
-  background-color: #192a56;
-}
-h1 {
-  color: white;
-}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+@import "reset.css";
+@import "bg.css";
+@import "weather.css";
+@import "clock.css";
+@import "greeting.css";
+@import "todo.css";
 
 @keyframes fadeIn {
   from {
@@ -13,22 +14,55 @@ h1 {
     opacity: 1;
   }
 }
-
-.form,
-.greetings {
-  display: none;
+@keyframes fadeInTwo {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+@keyframes showsUp {
+  from {
+    opacity: 0;
+    transform: translateY(1500px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes flip {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
 }
 
-.showing {
-  display: block;
+* {
+  box-sizing: border-box;
 }
-
-.bgImg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+body {
+  overflow: hidden;
+  background-color: #192a56;
+  color: white;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+main {
   height: 100%;
-  z-index: -1;
-  animation: fadeIn 0.5s ease-in-out;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: showsUp 1.7s ease-in-out forwards;
+}
+.showing {
+  display: flex;
 }

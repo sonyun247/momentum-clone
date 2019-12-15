@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>something</title>
+    <title>New Tab, New Day</title>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Welcome to my Momentum Clone. this is just practice Vanilla JS. Please Enjoy!"
+    />
+    <meta name="authur" content="https://github.com/sonyun247" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1 class="js-clock__title">00:00</h1>
-    </div>
-    <form class="js-greeting-form form">
-      <input
-        class="js-greeting-form__input"
-        type="text"
-        placeholder="Hello, what's your name?"
-      />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDo-form">
-      <input
-        class="js-toDo-form__input"
-        type="text"
-        placeholder="What is your main focus for today?"
-      />
-    </form>
-    <ul class="js-toDo-list"></ul>
-    <div class="js-weather">
-      <img class="js-weather-image" />
-      <span class="js-weather-text"></span>
-    </div>
+    <header class="js-weather weather">
+      <div class="weather-wrapper">
+        <img class="js-weather-image weather__image" />
+        <span class="js-weather-text_temp weather__text_temp"></span>
+      </div>
+      <span class="js-weather-text_place weather__text_place"></span>
+    </header>
+    <main>
+      <div class="js-clock clock">
+        <h1 class="js-clock__title">00:00</h1>
+      </div>
+      <form class="js-greeting-form greeting-form">
+        <span>
+          Hello, What's your name?
+        </span>
+        <input class="js-greeting-form__input" type="text" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+      <form class="js-toDo-form toDo-form">
+        <span>
+          What is your main focus for today?
+        </span>
+        <input class="js-toDo-form__input" type="text" />
+      </form>
+      <ul class="js-toDo-list toDo-list"></ul>
+    </main>
 
     <script src="clock.js"></script>
     <script src="greeting.js"></script>

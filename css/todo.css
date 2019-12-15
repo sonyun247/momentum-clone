@@ -1,0 +1,44 @@
+.toDo-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+.toDo-form span {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.toDo-form input {
+  border: none;
+  outline: none;
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  background-color: transparent;
+  text-align: center;
+  font-size: 36px;
+}
+.toDo-list,
+.toDo-list li {
+  margin: 10px;
+  padding: 10px;
+  text-align: start;
+  font-size: 30px;
+}
+.toDo-list button {
+  margin-right: 10px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 22px;
+}
+.toDo-list li:hover {
+  opacity: 0.8;
+  background-color: gray;
+  border-radius: 15px;
+  animation: fadeInTwo 0.7s ease-in-out;
+}
+.toDo-list button:hover {
+  color: red;
+  cursor: pointer;
+}

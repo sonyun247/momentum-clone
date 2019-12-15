@@ -1,7 +1,8 @@
 const API_KEY = "1d6d82ecac1647ee5c9348cf0462e8c3";
 const COORDS = "coords";
 const weather = document.querySelector(".js-weather"),
-  weatherText = weather.querySelector(".js-weather-text"),
+  weatherTemp = weather.querySelector(".js-weather-text_temp"),
+  weatherPlace = weather.querySelector(".js-weather-text_place"),
   weatherImage = weather.querySelector(".js-weather-image");
 
 function getWeather(lat, lon) {
@@ -17,7 +18,8 @@ function getWeather(lat, lon) {
       const temperature = json.main.temp;
       const place = json.name;
       weatherImage.src = `http://openweathermap.org/img/wn/${conditionImage}@2x.png`;
-      weatherText.innerText = `${temperature}℃ @${place}`;
+      weatherTemp.innerText = `${temperature} ℃`;
+      weatherPlace.innerText = `@ ${place}`;
     });
 }
 
