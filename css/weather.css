@@ -1,22 +1,23 @@
-.weather {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  margin-bottom: 10px;
-}
 .weather-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .weather__image {
+  height: 10vh;
+}
+.weather-detail {
+  margin-bottom: 5px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   height: 8vh;
 }
 .weather__text_temp {
   font-size: 28px;
+  margin-right: 5px;
 }
 .weather__text_place {
-  font-size: 18px;
+  font-size: 16px;
 }

@@ -32,7 +32,7 @@ function loadName() {
   }
 }
 
-function init() {
+function initGreeting() {
   loadName();
 }
-init();
+initGreeting();

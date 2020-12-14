@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
 @import "reset.css";
 @import "bg.css";
+@import "header.css";
+@import "xmas.css";
 @import "weather.css";
 @import "clock.css";
 @import "greeting.css";

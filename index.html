@@ -11,12 +11,18 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <header class="js-weather weather">
+    <header class="js-header header">
+      <div class="xmas-wrapper">
+        <h1 class="js-xmas__title xmas__title">Time Until Christmas Eve🎄</h1>
+        <h3 class="js-xmas__countdown xmas__countdown"></h3>
+      </div>
       <div class="weather-wrapper">
         <img class="js-weather-image weather__image" />
-        <span class="js-weather-text_temp weather__text_temp"></span>
+        <div class="weather-detail">
+          <span class="js-weather-text_temp weather__text_temp"></span>
+          <span class="js-weather-text_place weather__text_place"></span>
+        </div>
       </div>
-      <span class="js-weather-text_place weather__text_place"></span>
     </header>
     <main>
       <div class="js-clock clock">
@@ -38,6 +44,7 @@
       <ul class="js-toDo-list toDo-list"></ul>
     </main>
 
+    <script src="xmas.js"></script>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>

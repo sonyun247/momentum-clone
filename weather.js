@@ -1,6 +1,6 @@
 const API_KEY = "1d6d82ecac1647ee5c9348cf0462e8c3";
 const COORDS = "coords";
-const weather = document.querySelector(".js-weather"),
+const weather = document.querySelector(".weather-wrapper"),
   weatherTemp = weather.querySelector(".js-weather-text_temp"),
   weatherPlace = weather.querySelector(".js-weather-text_place"),
   weatherImage = weather.querySelector(".js-weather-image");
@@ -9,10 +9,10 @@ function getWeather(lat, lon) {
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
   )
-    .then(function(response) {
+    .then(function (response) {
       return response.json();
     })
-    .then(function(json) {
+    .then(function (json) {
       console.log(json);
       const conditionImage = json.weather[0].icon;
       const temperature = json.main.temp;
@@ -52,7 +52,7 @@ function loadCoords() {
     getWeather(parseCoords.latitude, parseCoords.longitude);
   }
 }
-function init() {
+function initWeather() {
   loadCoords();
 }
-init();
+initWeather();
